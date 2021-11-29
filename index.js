@@ -10,6 +10,7 @@ app.set("view engine", "ejs")
 
 app.use(express.json());
 app.use(express.urlencoded());
+app.use(express.static(__dirname + '/public'));
 
 app.get("/", function(req, res){
 	res.render("AdminForm");
@@ -17,7 +18,12 @@ app.get("/", function(req, res){
 
 app.post("/script", async (req, res) => {
 	var info = {
-		email:  req.body.email
+		username:		req.body.username,
+		homedir:		req.body.homedir,
+		userid:			req.body.userid,
+		groupid:		req.body.groupid,
+		description:	req.body.description,
+		userexp:		req.body.userexp
 	}
 	res.render("script", 
 	{

@@ -6,12 +6,27 @@
 </head>
 
 <body>
-	hey
-	<p><%=info.email%></p>
-	poggers
+	hey	poggers
 
+	<%= Object.keys(info).length;%>
+
+	<!-- <%= info.username%> -->
+
+
+	<br>
+
+	<!-- <% for (var i =1; i <=Object.keys(info).length;  i++ ) { %>
+	<br/>  <%=info.homedir%> 
+	<%#  will output the numbers 1-10 %>
+	<% } %> -->
+
+	<% if (info.username == 0) { %>
+	<%=		"NULL"%>
+	<% }%>
 	
-	<p> sudo useradd -m </p>
+
+	<!-- trying to get a for loop to work^^^ -->
+
 </body>
 
 </html>

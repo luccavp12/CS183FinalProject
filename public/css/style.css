@@ -1,0 +1,27 @@
+h1 {
+	font-family:'Times New Roman', Times, serif;
+	color: red;
+	width: 100%;
+	text-align: center;
+}
+
+#inputForm {
+	display: flex;
+	color: red;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.inputGroup {
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#loginbutton {
+	margin-top: 1%;
+	padding: 1%;
+}
