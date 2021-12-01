@@ -9,39 +9,41 @@
 <body>
 	<h1>User Creation Special Permissions</h1>
 
-	<form action="/script" method="POST" id="inputForm">
-		<div class="inputGroup">
-			User Name : <input type="text" name="username" id="username" class="inputBox"> 
-			<br>
-		</div>	
-
-		<div class="inputGroup">
-			Home Directory : <input type="text" name="homedir" id="homedir" class="inputBox"> 
-			<br>
-		</div>
-
-		<div class="inputGroup">
-			Specific User ID : <input type="text" name="userid" id="userid" class="inputBox">
-			<br>	
-		</div>
-
-		<div class="inputGroup">
-			Specific Group ID : <input type="text" name="groupid" id="groupid" class="inputBox">
-			<br>
-		</div>
-
-		<div class="inputGroup">
-			Custom Description : <input type="text" name="description" id="description" class="inputBox">
-			<br>
-		</div>
-
-		<div class="inputGroup">
-			User Expiry Date : <input type="text" name="userexp" id="userexp" class="inputBox">
-			<br>
-		</div>
-					
-		<button id='loginbutton' type="submit">Create User</button>
-	</form>
+	<div id="formWrapper">
+		<form action="/script" method="POST" id="inputForm">
+			<div class="inputGroup">
+				User Name : <input type="text" name="username" id="username" class="inputBox" required> 
+				<br>
+			</div>	
+	
+			<div class="inputGroup">
+				Home Directory (i.e. /var/www/labs) : <input type="text" name="homedir" id="homedir" class="inputBox"> 
+				<br>
+			</div>
+	
+			<div class="inputGroup">
+				Specific User ID : <input type="text" name="userid" id="userid" class="inputBox">
+				<br>	
+			</div>
+	
+			<div class="inputGroup">
+				Specific Group ID : <input type="text" name="groupid" id="groupid" class="inputBox">
+				<br>
+			</div>
+	
+			<div class="inputGroup">
+				Custom Description : <input type="text" name="description" id="description" class="inputBox">
+				<br>
+			</div>
+	
+			<div class="inputGroup">
+				User Expiry Date (YYYY-MM-DD) : <input type="text" name="userexp" id="userexp" class="inputBox">
+				<br>
+			</div>
+						
+			<button id='loginbutton' type="submit">Create User</button>
+		</form>
+	</div>
 </body>
 
 </html>

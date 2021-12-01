@@ -3,12 +3,54 @@
 
 <head>
 	<title>Pre-Filled Form Demo</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
 </head>
 
 <body>
-	hey	poggers
+	<h1>
+		Full script to create a user to your input specifications:
+	</h1>
 
-	<%= Object.keys(info).length;%>
+
+
+	<div id="scriptWrapper">
+		<div id="scriptDisplayContainer">
+			<p>
+				useradd
+				
+				<% homedir = info.homedir %>
+				<% if (homedir) { %>
+					-m -d <%= homedir %>
+				<% } %>
+
+				<% userid = info.userid %>
+				<% if (userid) { %>
+					-u <%= userid %>
+				<% } %>
+
+				<% groupid = info.groupid %>
+				<% if (groupid) { %>
+					-g <%= groupid %>
+				<% } %>
+
+				<% description = info.description %>
+				<% if (description) { %>
+					-c "<%= description %>"
+				<% } %>
+
+				<% userexp = info.userexp %>
+				<% if (userexp) { %>
+					-e <%= userexp %>
+				<% } %>
+
+				<%= info.username %>
+			</p>
+		</div>
+	</div>
+	
+	<br>
+	
+	<!-- <%= Object.keys(info).length;%> -->
 
 	<!-- <%= info.username%> -->
 
@@ -20,9 +62,14 @@
 	<%#  will output the numbers 1-10 %>
 	<% } %> -->
 
-	<% if (info.username == 0) { %>
-	<%=		"NULL"%>
-	<% }%>
+	<!-- <% for (var prop in info) { 									%>
+		<%	  if (Object.prototype.hasOwnProperty.call(info, prop)) { 	%>
+		<%		   if (info[prop]) {									%>
+						shit
+			<%			}													%>
+		<%	  }															%>
+		<% }															%> -->
+
 	
 
 	<!-- trying to get a for loop to work^^^ -->
