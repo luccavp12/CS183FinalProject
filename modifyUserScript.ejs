@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pre-Filled Form Demo</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>
+		Full script to modify a user to your input specifications:
+	</h1>
+
+	<div id="scriptWrapper">
+		<div id="scriptDisplayContainer">
+			<p>
+				groupmod
+
+				<% newDir = info.newDir %>
+				<% if (newDir) { %>
+					-d <%= newDir %>
+				<% } %>
+
+				<% userid = info.userid %>
+				<% if (userid) { %>
+					-u <%= userid %>
+				<% } %>
+
+				<% groupid = info.groupid %>
+				<% if (groupid) { %>
+					-g <%= groupid %>
+				<% } %>
+
+				<% userexp = info.userexp %>
+				<% if (userexp) { %>
+					-e <%= userexp %>
+				<% } %>
+
+				<% description = info.description %>
+				<% if (description) { %>
+					-c "<%= description %>"
+				<% } %>
+
+				<% oldname = info.oldname %>
+				<% newname = info.newname %>
+				<% if (oldname && newname) { %>
+					-l <%= newname %>
+					<%= oldname %>
+				<% } %>
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

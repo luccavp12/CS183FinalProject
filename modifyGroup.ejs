@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CS183 Final Project</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>Modify Group Special Permissions</h1>
+
+	<div id="formWrapper">
+		<form action="/modifyGroupScript" method="POST" id="inputForm">
+			<div class="inputGroup">
+				User Name : <input type="text" name="username" id="username" class="inputBox" required> 
+				<br>
+			</div>	
+
+			<div class="inputGroup">
+				Old name : <input type="text" name="oldname" id="oldname" class="inputBox"> 
+				<br>
+			</div>	
+
+			<div class="inputGroup">
+				New name : <input type="text" name="newname" id="newname" class="inputBox"> 
+				<br>
+			</div>	
+	
+			<div class="inputGroup">
+				New Group ID : <input type="text" name="groupid" id="groupid" class="inputBox">
+				<br>
+			</div>
+							
+			<button id='loginbutton' type="submit">Modify Group</button>
+		</form>
+	</div>
+</body>
+
+</html>

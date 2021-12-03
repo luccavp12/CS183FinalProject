@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CS183 Final Project</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>User Deletion</h1>
+
+	<div id="formWrapper">
+		<form action="/deleteUserScript" method="POST" id="inputForm">
+			<div class="inputGroup">
+				User Name : <input type="text" name="username" id="username" class="inputBox" required> 
+				<br>
+			</div>	
+
+			<div class="inputGroup">
+				Remove the account's home directory and mail file : <input type="checkbox" name="removeDir" id="removeDir" class="inputBox"> 
+				<br>
+			</div>	
+						
+			<button id='loginbutton' type="submit">Delete User</button>
+		</form>
+	</div>
+</body>
+
+</html>

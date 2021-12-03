@@ -8,36 +8,34 @@
 
 <body>
 	<h1>
-		Full script to create a user to your input specifications:
+		Choose what you would like to do!
 	</h1>
 
-	<form action="/script" method="POST" id="inputForm">
-                            
-        <button id='loginbutton' type="submit">Create User</button>
+    <div id="homeformcontainer">
+        <form action="/createUser" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Create User</button>
+        </form>
         
-    </form>
-    
-    <form action="">
-        <button id='loginbutton' type="submit">Modify User</button>
-    </form>
-     
-    <form action="">
-        <button id='loginbutton' type="submit">Delete User</button>
-    </form>
-     
-    <form action="">
-        <button id='loginbutton' type="submit">Create Group</button>
-    </form>
-     
-    <form action="">
-        <button id='loginbutton' type="submit">Modify Group</button>
-    </form>
-     
-    <form action="">
-        <button id='loginbutton' type="submit">Delete Group</button>
-    </form>
-     
-
+        <form action="/modifyUser" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Modify User</button>
+        </form>
+         
+        <form action="/deleteUser" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Delete User</button>
+        </form>
+         
+        <form action="/createGroup" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Create Group</button>
+        </form>
+         
+        <form action="/modifyGroup" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Modify Group</button>
+        </form>
+         
+        <form action="/deleteGroup" method="POST" id="homeform">
+            <button id='loginbutton' type="submit">Delete Group</button>
+        </form>
+    </div>
 </body>
 
 </html>

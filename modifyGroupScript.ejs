@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pre-Filled Form Demo</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>
+		Full script to modify a group to your input specifications:
+	</h1>
+
+	<div id="scriptWrapper">
+		<div id="scriptDisplayContainer">
+			<p>
+				groupmod
+				
+				<% oldname = info.oldname %>
+				<% newname = info.newname %>
+				<% groupid = info.groupid %>
+				<% if (oldname && newname) { %>
+					-n <%= newname %>
+					<%= oldname %>
+				<% } else { %>
+					-g <%= groupid %>
+					<%= info.username %>
+				<% } %>
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

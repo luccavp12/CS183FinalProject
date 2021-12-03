@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pre-Filled Form Demo</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>
+		Full script to delete a user to your input specifications:
+	</h1>
+
+	<div id="scriptWrapper">
+		<div id="scriptDisplayContainer">
+			<p>
+				groupdel
+							
+				<% removeDir = info.removeDir %>
+				<% if (removeDir) { %>
+					-r
+				<% } %>
+
+				<%= info.username %>
+			</p>
+		</div>
+	</div>
+
+</body>
+
+</html>

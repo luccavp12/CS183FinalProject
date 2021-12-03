@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CS183 Final Project</title>
+	<link rel="stylesheet" type="text/css"   href="/css/style.css">
+</head>
+
+<body>
+	<h1>Group Creation Special Permissions</h1>
+
+	<div id="formWrapper">
+		<form action="/createGroupScript" method="POST" id="inputForm">
+			<div class="inputGroup">
+				Group Name : <input type="text" name="groupname" id="groupname" class="inputBox" required> 
+				<br>
+			</div>	
+		
+			<div class="inputGroup">
+				Specific Group ID : <input type="text" name="groupid" id="groupid" class="inputBox">
+				<br>
+			</div>
+	
+			<div class="inputGroup">
+				Create group with non-unique GID : <input type="checkbox" name="nonuniqueGID" id="nonuniqueGID" class="inputBox">
+				<br>
+			</div>
+	
+			<div class="inputGroup">
+				This flag instructs groupadd to add a system account : <input type="checkbox" name="systemaccount" id="systemaccount" class="inputBox">
+				<br>
+			</div>
+
+			<div class="inputGroup">
+				This option causes to just exit with success status, if the specified group already exists. Or if the specified GID already exists, other (unique) GID is chosen : 
+				<input type="checkbox" name="successstatus" id="successstatus" class="inputBox">
+				<br>
+			</div>
+						
+			<button id='loginbutton' type="submit">Create Group</button>
+		</form>
+	</div>
+</body>
+
+</html>
